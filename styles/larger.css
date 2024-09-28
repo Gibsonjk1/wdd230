@@ -1,0 +1,11 @@
+        @media screen and (min-width: 800px) {
+            nav {
+                flex-direction: row;
+            }
+            .left-col {
+                grid-column: 1/3
+            }
+            .right-col {
+                grid-column: 3/5
+            }
+        }
