@@ -1,0 +1,23 @@
+@media screen and (min-width: 501px) {
+    .left-col {
+        grid-column: 1/7
+    }
+    .middle-col {
+        grid-column: 7/13
+    }
+    .right-col {
+        grid-column: 5/9
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .left-col {
+        grid-column: 1/5
+    }
+    .middle-col {
+        grid-column: 5/9
+    }
+    .right-col {
+        grid-column: 9/13
+    }
+}

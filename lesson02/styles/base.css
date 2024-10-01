@@ -1,11 +1,26 @@
+:root {
+    --mainblue: #0d2149;
+    --lighterblue: #7a89c2;
+    --licorice: #0e0004;
+    --light: #eef0f2;
+    --accent: #98473e;
+}
+
 * {
-    max-width: 500px;
+    max-width: 1600px;
     margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: black;
 }
 
 h1 {
     text-align: center;
     font-family: 'roboto';
+    color: var(--licorice);
 }
 
 section {
@@ -15,6 +30,14 @@ section {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    background-color: var(--mainblue);
+    max-width: 500px;
+    grid-column: 1/6
+}
+
+section h2 {
+    font-family: 'roboto';
+    color: var(--light);
 }
 
 img {
@@ -26,5 +49,22 @@ p {
     border: 1px solid black;
     margin: 5px;
     padding: 5px;
-    font-family: 'roboto'
+    font-family: 'roboto';
+    color: var(--light);
+}
+
+ul li {
+    color: var(--light);
+}
+
+.left-col {
+    grid-column: 1/13;
+}
+
+.middle-col {
+    grid-column: 1/13;
+}
+
+.right-col {
+    grid-column: 1/13;
 }
