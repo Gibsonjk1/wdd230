@@ -20,10 +20,19 @@
 
 <body>
     <header>
-        <h1>Jason K Gibson</h1>
-        <img src="images/self-portrait.png" alt="">
-        <nav>
-            <a href="#">Home</a>
+        <div class="header-iden">
+            <div class="header-name">
+                <h1>Jason K Gibson</h1>
+            </div>
+            <div class="header-img">
+                <img src="images/self-portrait.webp" alt="">
+            </div>
+        </div>
+        <div>
+            <button type="button" id="hamburger"></button>
+        </div>
+        <nav class="nav">
+            <a href="#" class="active">Home</a>
             <a href="lesson03/chamber-site-plan.html">Site Plan</a>
             <a href="chamber/">Chamber</a>
             <a href="BYUI.edu" target="_blank" rel="noreferrer noopener">BYU-Idaho</a>
@@ -55,11 +64,16 @@
             <p>page visits Placeholder</p>
         </section>
     </main>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11600.93057756404!2d-112.12794741175556!3d43.37215936914908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354f90a7195d4c1%3A0xfa09d0ab04a6276b!2sShelley%20Cemetery!5e0!3m2!1sen!2sus!4v1727997436910!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p id="copyright"></p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

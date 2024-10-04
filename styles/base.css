@@ -16,12 +16,17 @@
 }
 
 nav {
+    display: none;
+}
+
+nav.open {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     text-align: center;
     background-color: var(--lighterblue);
+    padding: 40px;
 }
 
 nav a {
@@ -38,8 +43,22 @@ header {
     margin: 0 auto;
 }
 
-header img {
-    width: 30%;
+.header-iden {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-name {
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.header-img {
+    max-width: 200px;
+    height: auto;
 }
 
 main {
@@ -64,10 +83,39 @@ section h3 {
     border-radius: 5px;
 }
 
+.card ul {
+    list-style-type: none;
+}
+
 .left-col {
-    grid-column: 1/13;
+    grid-column: 2/12;
 }
 
 .right-col {
-    grid-column: 1/13
+    grid-column: 2/12
+}
+
+#hamburger::before {
+    content: "☰";
+    font-size: 25px;
+    float: left;
+}
+
+#hamburger.open::before {
+    content: "✖️"
+}
+
+.active::before {
+    content: "📍"
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.map {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
