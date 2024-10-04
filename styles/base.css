@@ -15,23 +15,23 @@
     box-sizing: border-box;
 }
 
-nav {
+nav.nav {
     display: none;
 }
 
-nav.open {
+.nav.open {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: var(--lighterblue);
+    background-color: var(--licorice);
     padding: 40px;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
-    color: var(--licorice);
+    color: var(--light);
 }
 
 header {
@@ -76,6 +76,11 @@ main h2 {
 
 section h3 {
     background-color: var(--lighterblue);
+    text-align: center;
+}
+
+.card div {
+    padding: 20px;
 }
 
 .card {
@@ -105,13 +110,15 @@ section h3 {
     content: "✖️"
 }
 
-.active::before {
-    content: "📍"
+.active:hover {
+    font-size: 120%;
 }
 
 .active {
     font-weight: bold;
     text-decoration: underline;
+    background-color: var(--accent);
+    transition: all .4s;
 }
 
 .map {
