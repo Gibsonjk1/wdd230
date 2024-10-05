@@ -1,0 +1,79 @@
+:root {
+    --lightblue: #669bbc;
+    --darkblue: #003049;
+    --creamy: #fdf0d5;
+    --red: #c1121f;
+    --rust: #780000;
+}
+
+* {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.background {
+    background-color: var(--darkblue);
+    color: var(--creamy);
+    height: 50px;
+    text-align: center;
+}
+
+.accented-background {
+    background-color: var(--lightblue);
+    height: 50%;
+    text-align: center;
+}
+
+.accent {
+    background-color: var(--rust);
+    text-align: center;
+}
+
+.button {
+    background-color: var(--red);
+    text-align: center;
+}
+
+.typography {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.mobile {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.desktop {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
