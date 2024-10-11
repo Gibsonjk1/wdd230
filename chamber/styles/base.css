@@ -1,0 +1,28 @@
+:root {
+    --lightblue: #669bbc;
+    --darkblue: #003049;
+    --creamy: #fdf0d5;
+    --red: #c1121f;
+    --rust: #780000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/Taylor-Mountain-OG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-iden {
+    display: flex;
+    flex-direction: row;
+}
