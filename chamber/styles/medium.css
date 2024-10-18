@@ -1,0 +1,35 @@
+@media only screen and (min-width: 700px) {
+    .card-2 {
+        flex-grow: 1;
+        min-width: 40%;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: var(--darkblue);
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .nav li {
+        display: block;
+        flex: 1 1 100%;
+        padding: 30px 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    .left-col {
+        grid-column: 1/7
+    }
+    .right-col {
+        grid-column: 7/13
+    }
+    #hamburger {
+        display: none;
+    }
+    .media {
+        background-color: blueviolet
+    }
+}

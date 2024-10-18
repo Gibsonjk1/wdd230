@@ -14,56 +14,65 @@
 
 header {
     width: 100%;
-    height: 200px;
-    background-image: url("../images/taylor-mountain-og.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
 }
 
 .header-iden {
+    background-color: var(--darkblue);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     color: var(--creamy);
     flex-wrap: nowrap;
     width: 100%;
-    height: 200px;
+    height: 150px;
+    padding-left: 20px;
 }
 
 .header-title {
-    max-width: 500px;
+    max-width: 300px;
+}
+
+.header-title h2 {
+    position: relative;
+    bottom: 20px;
 }
 
 .header-img {
     max-height: 100%;
+    padding: 10px;
 }
 
 .header-img img {
-    max-width: 200px;
+    max-width: 100px;
 }
 
-nav {
+nav .closed {
     display: none;
 }
 
-display.open {
-    display: block;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 nav ul {
+    width: 50%;
+    border-top: 1px solid black;
+}
+
+nav .open {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: var(--darkblue);
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
+    background-color: var(--lightblue);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 ul li {
@@ -77,20 +86,27 @@ nav a {
 
 .button {
     width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+}
+
+.button img {
+    width: 80%;
+    object-fit: cover;
 }
 
 .button button {
     width: 400px;
     height: 80px;
-    border-radius: 0 0 10px 10px;
-    border-top: none;
+    border-radius: 10px;
     background-color: var(--rust);
     color: var(--creamy);
     font-size: 30px;
-    font-family: "Afacad Flux", sans-serif;
+    position: absolute;
+    top: 5px;
 }
 
 .cards {
@@ -103,18 +119,16 @@ nav a {
 
 .cards section {
     border: 1px solid black;
+    text-align: center;
 }
 
 .card-2 {
     flex-grow: 1;
+    min-width: 80%;
 }
 
 .card-1 {
-    max-width: 80%;
-}
-
-.spotlight {
-    text-align: center;
+    width: 80%;
 }
 
 .spotlight-card {
@@ -137,12 +151,25 @@ footer {
     margin-top: 20px;
 }
 
+#hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--darkblue);
+    border: none;
+}
+
 #hamburger::before {
     content: "☰";
     font-size: 25px;
-    float: left;
 }
 
 #hamburger.open::before {
     content: "✖️"
+}
+
+.media {
+    height: 20px;
+    width: 100%;
+    background-color: #669bbc;
 }
