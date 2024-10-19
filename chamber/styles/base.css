@@ -27,7 +27,7 @@ header {
     color: var(--creamy);
     flex-wrap: nowrap;
     width: 100%;
-    height: 150px;
+    height: 70px;
     padding-left: 20px;
 }
 
@@ -46,7 +46,8 @@ header {
 }
 
 .header-img img {
-    max-width: 100px;
+    max-width: 60px;
+    border-radius: 2px;
 }
 
 nav .closed {
@@ -59,9 +60,10 @@ nav {
     justify-content: center;
 }
 
-nav ul {
+#nav {
     width: 50%;
     border-top: 1px solid black;
+    font-size: 25px;
 }
 
 nav .open {
@@ -99,10 +101,10 @@ nav a {
 }
 
 .button button {
-    width: 400px;
+    width: 300px;
     height: 80px;
     border-radius: 10px;
-    background-color: var(--rust);
+    background-color: var(--lightblue);
     color: var(--creamy);
     font-size: 30px;
     position: absolute;
@@ -117,22 +119,44 @@ nav a {
     justify-content: center;
 }
 
-.cards section {
-    border: 1px solid black;
-    text-align: center;
-}
+.cards section {}
 
 .card-2 {
+    text-align: left;
+    padding: 20px;
     flex-grow: 1;
     min-width: 80%;
+    min-height: 80px;
+    margin: 5px;
+    box-shadow: 1.5px 3px 10px #888888;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
 }
 
 .card-1 {
     width: 80%;
+    min-height: 80px;
+    margin: 5px;
+}
+
+
+/* spotlight {
+} */
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .spotlight-card {
-    border: 1px solid black;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin: 10px;
+    box-shadow: 1.5px 3px 10px #888888;
 }
 
 .spotlight-card h2 {
@@ -141,6 +165,7 @@ nav a {
 
 .spotlight-card p {
     width: 70%;
+    margin: 0 auto;
 }
 
 footer {
@@ -166,6 +191,69 @@ footer {
 
 #hamburger.open::before {
     content: "✖️"
+}
+
+.switch {
+    position: absolute;
+    right: 2px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .media {

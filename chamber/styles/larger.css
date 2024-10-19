@@ -2,4 +2,13 @@
     .media {
         background-color: black;
     }
+    .spotlight-card {
+        width: 40%;
+        padding: 10px;
+    }
+    .flexbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
