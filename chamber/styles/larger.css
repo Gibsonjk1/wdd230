@@ -1,14 +1,14 @@
 @media only screen and (min-width: 1000px) {
-    .media {
-        background-color: black;
-    }
     .spotlight-card {
-        width: 40%;
+        width: 25%;
         padding: 10px;
     }
     .flexbox {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .button button {
+        left: 10px;
     }
 }

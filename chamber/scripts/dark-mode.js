@@ -1,49 +1,16 @@
-< !DOCTYPE html >
-    <
-    html lang = "en" >
+const switcher = document.querySelector('.slider');
+const mainer = document.querySelector('main');
+const cardList = document.querySelectorAll('.spotlight-card');
+const card2 = document.querySelectorAll('.card-2');
+const body = document.querySelector('body')
 
-    <
-    head >
-    <
-    meta charset = "UTF-8" >
-    <
-    meta name = "viewport"
-content = "width=device-width, initial-scale=1.0" >
-    <
-    meta http - equiv = "X-UA-Compatible"
-content = "ie=edge" >
-    <
-    title > BOM DOM Manipulation < /title> <
-    meta name = "author"
-content = "Jason K Gibson" >
-    <
-    meta name = "description"
-content = "an assignment of WDD230 consisting of DOM manipulation via js" >
-    <
-    link rel = "stylesheet"
-href = "styles/base.css" >
-    <
-    /head>
-
-
-<
-body >
-    <
-    h1 > 📖Book of Mormon - Top 10 < /h1> <
-    main >
-    <
-    label
-for = "favchap" > Enter Book and Chapter: < /label> <
-    input type = "text"
-id = "favchap"
-placeholder = "Alma 5" >
-    <
-    button type = "submit" > Add Chapter < /button> <
-    ul id = "list" > < /ul> <
-    /main> <
-    footer > ©️Jason K Gibson 2024 < /footer> <
-    script src = "scripts/bom.js" > < /script> <
-    /body>
-
-<
-/html>
+switcher.addEventListener('click', () => {
+    mainer.classList.toggle('dark');
+    for (let i = 0; i < cardList.length; i++) {
+        cardList[i].classList.toggle('dark');
+    }
+    for (let i = 0; i < card2.length; i++) {
+        card2[i].classList.toggle('dark');
+    }
+    body.classList.toggle('dark')
+})

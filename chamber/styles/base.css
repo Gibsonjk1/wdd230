@@ -12,6 +12,10 @@
     font-family: "Afacad Flux", sans-serif;
 }
 
+body {
+    height: 1vh;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -87,7 +91,8 @@ nav a {
 }
 
 .button {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -96,13 +101,13 @@ nav a {
 }
 
 .button img {
-    width: 80%;
+    width: 100%;
     object-fit: cover;
 }
 
 .button button {
-    width: 300px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
     border-radius: 10px;
     background-color: var(--lightblue);
     color: var(--creamy);
@@ -118,8 +123,6 @@ nav a {
     margin: 20px auto 0 auto;
     justify-content: center;
 }
-
-.cards section {}
 
 .card-2 {
     text-align: left;
@@ -157,6 +160,7 @@ nav a {
     width: 100%;
     margin: 10px;
     box-shadow: 1.5px 3px 10px #888888;
+    min-height: 80px;
 }
 
 .spotlight-card h2 {
@@ -196,6 +200,7 @@ footer {
 .switch {
     position: absolute;
     right: 2px;
+    z-index: 1;
     display: inline-block;
     width: 60px;
     height: 34px;
@@ -245,9 +250,6 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
-/* Rounded sliders */
-
 .slider.round {
     border-radius: 34px;
 }
@@ -256,8 +258,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-.media {
-    height: 20px;
-    width: 100%;
-    background-color: #669bbc;
+.dark {
+    background-color: #000 !important;
+    color: #fff;
 }
