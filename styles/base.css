@@ -124,7 +124,7 @@ section h3 {
 
 #hamburger.open::before {
     content: "✖";
-    color: var(var(--light));
+    color: var(--light);
 }
 
 .active:hover {
