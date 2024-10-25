@@ -126,3 +126,24 @@ section h3 {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+.temple-hero {
+    width: 100%;
+    grid-column: 1/13;
+    position: relative;
+}
+
+.temple-hero img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.temple-hero h2 {
+    position: absolute;
+    top: 75px;
+    color: var(--light);
+    background-color: var(--mainblue);
+    white-space: nowrap;
+}
