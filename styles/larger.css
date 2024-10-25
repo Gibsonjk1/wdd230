@@ -10,6 +10,10 @@
                 margin: 0 auto;
                 border-radius: 10px;
             }
+            nav .open {
+                padding: 0;
+                width: 80%
+            }
             .nav li {
                 display: block;
                 flex: 1 1 100%;
