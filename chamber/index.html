@@ -27,7 +27,7 @@
     <header>
         <div class="header-iden">
             <div class="header-img">
-                <img src="images/world.png" alt="Shelley Chamber of Commerce">
+                <img src="images/world.webp" alt="Shelley Chamber of Commerce">
             </div>
             <div class="header-title">
                 <h1>Shelley Idaho Chamber of Commerce</h1>
@@ -50,12 +50,20 @@
                   </label>
         <div class="button">
             <picture>
-                <source media="(min-width: 500px)" srcset="images/large-image.jpg">
-                <source media="(min-width: 1000px)" srcset="images/large-image.jpg">
-                <img src="images/large-image.jpg" alt="temple picture" width="1500" height="750">
+                <source media="(min-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="temple picture" width="1500" height="750">
             </picture>
-            <img src="images/large-image.jpg" alt="Falls on Snake River in Shelley Idaho">
             <button>Join the Chamber</button>
+            <div class="small-img">
+                <p>500px</p>
+            </div>
+            <div class="medium-img">
+                <p>1000px</p>
+            </div>
+            <div class="large-img">
+                <p>1500px</p>
+            </div>
         </div>
         <div class="cards">
             <section class="events card-2">
@@ -65,9 +73,9 @@
             <section class="weather card-2">
                 <h2>Weather</h2>
                 <hr>
-                <p>72 fahrenheit</p>
-                <p>Humidity: 20%</p>
-                <p>Wind Chill: N/A</p>
+                <p id="temp">72</p>
+                <p id="windspeed">Windspeed: 12</p>
+                <p id="windchill">Wind Chill: N/A</p>
             </section>
             <section class="spotlight card-1">
                 <h2>Spotlights</h2>
@@ -98,6 +106,7 @@
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>

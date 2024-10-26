@@ -34,3 +34,15 @@
         display: none;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .medium-img {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .small-img {
+        display: none;
+    }
+}
