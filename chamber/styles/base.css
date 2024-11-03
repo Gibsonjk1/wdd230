@@ -302,7 +302,7 @@ body {
 .month {
     padding: 15px 0px;
     width: 100%;
-    background: var(--lightblue);
+    background: var(--rust);
     text-align: center;
 }
 
