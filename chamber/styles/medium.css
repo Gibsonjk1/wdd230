@@ -33,6 +33,18 @@
     #hamburger {
         display: none;
     }
+    .discover-main {
+        grid-column: 2/3;
+    }
+    .sidebar {
+        grid-column: 1/2;
+    }
+    .container:hover img {
+        opacity: .3;
+    }
+    .container:hover .overlay {
+        opacity: 1;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
