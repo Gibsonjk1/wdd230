@@ -1,8 +1,8 @@
 const switcher = document.querySelector('.slider');
 const mainer = document.querySelector('main');
-const cardList = document.querySelectorAll('.spotlight-card');
-const card2 = document.querySelectorAll('.card-2');
-const body = document.querySelector('body')
+const cardList = document.querySelectorAll('.spotlight-card') || [];
+const card2 = document.querySelectorAll('.card-2') || [];
+const body = document.querySelector('body');
 
 switcher.addEventListener('click', () => {
     mainer.classList.toggle('dark');
