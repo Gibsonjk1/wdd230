@@ -1,0 +1,53 @@
+* {
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tbody td,
+tbody th {
+    border: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+td {
+    width: 2em;
+    text-align: center;
+}
+
+th {
+    min-width: 6em;
+}
+
+.th {
+    background-color: grey;
+}
+
+tbody tr:nth-child(2) {
+    background-color: rgb(241, 241, 241);
+}
+
+caption {
+    display: table-caption;
+    caption-side: bottom;
+    color: Gray;
+}
