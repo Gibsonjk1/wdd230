@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jason K Gibson">
+    <meta name="description" content="This page highlights the development work for Jason K Gibson in a college course titled WDD 230 - WebFrontend Development. This is a form page within my homepage">
+    <title>Jason K Gibson - WDD 230 - Web Frontend Development - Form</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jason K Gibson - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKv5FXsGjYW_FjgUGHNAWEEBhcyYl-0UEyg&s">
+    <meta property="og:url" content="https://gibsonjk1.github.io/wdd230">
+</head>
+
+<body>
+    <header>
+        <div class="header-iden">
+            <div class="header-name">
+                <h1>Jason K Gibson</h1>
+            </div>
+            <div class="header-img">
+                <img src="images/self-portrait.webp" alt="">
+            </div>
+        </div>
+        <div>
+            <button type="button" id="hamburger">Menu</button>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="BYUI.edu" target="_blank" rel="noreferrer noopener">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-tim/1?lang=eng&id=p7#p7" target="_blank" rel="noreferrer noopener">Scripture</a></li>
+            </ul>
+
+
+
+
+        </nav>
+    </header>
+    <main class="form-main">
+        <div class="formWrapper">
+            <div id="formmessage"></div>
+            <h1>Create an Account</h1>
+            <form action="record.html" method="GET" class="form1">
+                <label>Username*<input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Confirm Password* <input type="password" id="confirm" name="confirm" required pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address."></label>
+                <label>Page Rating <input type="range" id="rating" name="rating" min="1" max="10" step="1"></label>
+                <div id="rangevalue">6</div>
+                <input type="submit" id="formButton" value="Create Account">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/page-visit.js"></script>
+    <script src="scripts/confirmpass.js"></script>
+    <script src="scripts/range.js"></script>
+</body>
+
+</html>
