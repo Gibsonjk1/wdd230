@@ -53,7 +53,7 @@
                         <label>Last Name* <input type="text" name="lname" id="lname" required></label>
                         <label>Title/Position* <input type="text" name="title" id="title" required pattern="[A-Za-z0-9 -]{7,}"></label>
                         <label>Email* <input type="email" name="email" id="email" required placeholder="someone@something.com"></label>
-                        <label>Mobile Phone* <input type="tel" name="mphone" id="mphone"required placeholder="xxx-xxx-xxxx"></label>
+                        <label>Mobile Phone* <input type="tel" name="mphone" id="mphone" required placeholder="xxx-xxx-xxxx"></label>
                         <label>Business/Organization Name* <input type="text" name="org" id="org" required></label>
                         <label class="center-blk">Choose Your Membership Level<input type="range" name="memlev" id="memlev" min="1" max="4" step="1" value="1"></label>
                         <div class="member-level-display">
@@ -62,7 +62,7 @@
                         <label>Business/Organization description <textarea name="orgdescription" id="orgdescription" cols="30" rows="10"></textarea></label>
                         <input type="hidden" name="form-date" id="form-date">
                     </fieldset>
-                    <input type="submit" name="fname" id="fname" value="Complete Your Application">
+                    <input type="submit" name="app-submit" id="app-submit" value="Complete Your Application">
                 </form>
             </div>
             <div class="membership">
@@ -180,8 +180,8 @@
                             <td>✔️</td>
                         </tr>
                     </tbody>
-                    <caption>Membership Comparison</caption>
                 </table>
+                <caption>Membership Comparison</caption>
             </div>
         </div>
     </main>
