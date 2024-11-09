@@ -82,6 +82,10 @@ nav .open {
     padding-right: 40px;
 }
 
+h1 {
+    text-align: center;
+}
+
 ul li {
     list-style-type: none;
 }
@@ -435,4 +439,157 @@ body {
 
 .visit {
     padding: 10px;
+}
+
+
+/* table styles */
+
+.membership {
+    width: 100%;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.membership thead {
+    background-color: black;
+    color: white;
+}
+
+.membership tbody td,
+.membership tbody th {
+    border: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+.membership td {
+    width: 2em;
+    text-align: center;
+}
+
+.membership th {
+    min-width: 6em;
+}
+
+.membership .th {
+    background-color: grey;
+}
+
+.membership tbody tr:nth-child(odd) {
+    background-color: rgb(241, 241, 241);
+}
+
+.membership caption {
+    display: table-caption;
+    caption-side: bottom;
+    color: Gray;
+}
+
+
+/* form styles */
+
+.membership-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.formWrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form1 {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.form1 fieldset {
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border: none;
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #38328d;
+    font-size: .9rem;
+}
+
+.form1 div {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.form1 input[type="text"],
+.form1 input[type="email"],
+.form1 input[type="tel"],
+.form1 textarea {
+    display: block;
+    border-radius: 5px;
+    padding: .8em;
+    color: rgb(41, 41, 41);
+    width: 97%;
+    appearance: none;
+}
+
+.form1 input[type="range"] {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(to bottom, var(--lightblue), var(--darkblue));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 4px #999;
+    display: block;
+}
+
+.form1 input:required {
+    border-bottom: 4px solid #6f200e;
+    background-color: #eee;
+}
+
+.form1 input:required:valid {
+    border: 1px solid #999;
+    background-color: #eee;
+}
+
+#formmessage {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.member-level-display {
+    display: block;
+    margin: 0 auto;
+}
+
+.member-level-display p {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
 }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shelley Idaho Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="author" content="Jason K Gibson">
+    <meta name="description" content="The home page of the Chamber of Commerce for Shelley Idaho. including Events, Calendar, and directory of members">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Jason K Gibson - WDD 230 - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fchamber-of-commerce&psig=AOvVaw167CoqI2er2uHEsl1U0eso&ust=1728602339165000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCSs9i3gokDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://gibsonjk1.github.io/wdd230/chamber">
+    <meta property="og:description" content="Welcome to the Chamber of Commerce for Shelley Idaho">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-iden">
+            <div class="header-img">
+                <img src="images/world.webp" alt="Shelley Chamber of Commerce">
+            </div>
+            <div class="header-title">
+                <h1>Shelley Idaho Chamber of Commerce</h1>
+            </div>
+        </div>
+        <button id="hamburger"></button>
+        <nav>
+            <ul id="nav" class="closed">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="membership-page">
+            <div class="formWrapper">
+                <h1>Apply For a Membership</h1>
+                <form action="thankyou.html" method="GET" class="form1">
+                    <fieldset>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label>Title/Position* <input type="text" name="title" id="title" required pattern="[A-Za-z0-9 -]{7,}"></label>
+                        <label>Email* <input type="email" name="email" id="email" required placeholder="someone@something.com"></label>
+                        <label>Mobile Phone* <input type="tel" name="mphone" id="mphone"required placeholder="xxx-xxx-xxxx"></label>
+                        <label>Business/Organization Name* <input type="text" name="org" id="org" required></label>
+                        <div class="member-level">
+                            <p>Choose Your Membership Level</p>
+                        </div>
+                        <input type="range" name="memlev" id="memlev" min="1" max="4" step="1" value="1">
+                        <div class="member-level-display">
+                            <p>NP Membership</p>
+                        </div>
+                        <label>Business/Organization description <textarea name="orgdescription" id="orgdescription" cols="30" rows="10"></textarea></label>
+                        <input type="hidden" name="form-date" id="form-date">
+                    </fieldset>
+                    <input type="submit" name="fname" id="fname" value="Complete Your Application">
+                </form>
+            </div>
+            <div class="membership">
+                <h1>Membership Levels</h1>
+                <table class="membership-level">
+                    <thead>
+                        <tr>
+                            <th colspan="5">Chamber of Commerce Membership Levels </th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th class="th">NP (Non-Profit)</th>
+                            <th class="th">Bronze</th>
+                            <th class="th">Silver</th>
+                            <th class="th">Gold</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Access Level</td>
+                            <td>Basic</td>
+                            <td>Enhanced</td>
+                            <td>Comprehensive</td>
+                            <td>Elite</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Newsletters and Articles</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Community Forums and Discussion Boards</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Free Webinars and Virtual Events</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Access to Resource Library</td>
+                            <td>Limited</td>
+                            <td>Limited</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Discount on Workshops and Online Courses</td>
+                            <td>❌</td>
+                            <td>5%</td>
+                            <td>10%</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Early Access to New Articles and Resources</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Priority Email Support</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Member-Only Networking Events</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Premium Articles and Advanced Tutorials</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly eBook Downloads</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>Free</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Consultation Sessions with Industry Experts</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>2 sessions/month</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>VIP Invitations to Exclusive Events and Conferences</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Personalized Support with a Dedicated Account Manager</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✔️</td>
+                        </tr>
+                    </tbody>
+                    <caption>Membership Comparison</caption>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©️ Jason K Gibson 2024</p>
+        <p>A project of WDD230</p>
+        <p id="modifiedDate"></p>
+        <p>Contact: 123 Main St. Shelley Idaho | 208.123.4567</p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
