@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.congrats {
+    border: 1px double rgb(97, 146, 23);
+    width: 75%;
+    margin: 150px auto;
+    vertical-align: center;
+}

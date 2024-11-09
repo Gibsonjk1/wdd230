@@ -1,3 +1,10 @@
+:root {
+    --border: #ddd;
+    --mainblue: #0d2149;
+    --lighterblue: #7a89c2;
+}
+
+
 /* FORM STYLING */
 
 .form-main {
@@ -29,7 +36,7 @@
 
 .form1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     border-radius: 6px;
     padding: .5rem 2%;
 }
@@ -37,7 +44,7 @@
 .form1 label {
     display: block;
     padding-top: 1rem;
-    color: #6f200e;
+    color: #38328d;
     font-size: .9rem;
 }
 
@@ -64,7 +71,7 @@
 
 .form1 input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#fcc4b7, #6f200e);
+    background-image: linear-gradient(to bottom right, var(--lighterblue), var(--mainblue));
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -88,4 +95,7 @@
 #formmessage {
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
 }
