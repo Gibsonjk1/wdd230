@@ -475,7 +475,7 @@ table {
 }
 
 .membership .th {
-    background-color: grey;
+    background-color: rgb(49, 49, 49);
 }
 
 .membership tbody tr:nth-child(odd) {
@@ -485,7 +485,7 @@ table {
 .membership caption {
     display: table-caption;
     caption-side: bottom;
-    color: Gray;
+    color: black;
 }
 
 
