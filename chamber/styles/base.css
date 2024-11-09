@@ -533,6 +533,7 @@ table {
 .form1 .center-blk {
     padding-top: 1rem;
     text-align: center;
+    color: black;
 }
 
 .form1 input[type="text"],
