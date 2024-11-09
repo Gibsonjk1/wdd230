@@ -529,7 +529,8 @@ table {
     font-size: .9rem;
 }
 
-.form1 div {
+.form1 div,
+.form1 .center-blk {
     padding-top: 1rem;
     text-align: center;
 }
