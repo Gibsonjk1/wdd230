@@ -1,0 +1,19 @@
+{
+    "wardInformation": {
+        "familyName": "Nelson",
+        "moveinDate": "2024-11-12",
+        "familySize": 12,
+        "bishopVisit": true,
+        "familyMembers": [{
+                "name": "Russell",
+                "Gender": "male",
+                "birthdate": "1924-09-09"
+            },
+            {
+                "name": "Wendy",
+                "Gender": "female",
+                "birthdate": "1950-05-1950"
+            }
+        ]
+    }
+}
