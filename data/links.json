@@ -10,75 +10,75 @@
             "lesson": "03",
             "links": [{
                     "url": "images/combinators.png",
-                    "title": "Combinators Exercise"
+                    "title": "Combinators"
                 },
                 {
                     "url": "https://codepen.io/Jason-Gibson-the-solid/pen/OJKNPjq",
-                    "title": "Pseudo Elements Codepen"
+                    "title": "Pseudo Elements"
                 },
                 {
                     "url": "https://codepen.io/Jason-Gibson-the-solid/pen/KKOzwZd",
-                    "title": "Hamburger Menu Codepen"
+                    "title": "Hamburger Menu"
                 },
                 {
                     "url": "https://gibsonjk1.github.io/wdd230/lesson03/chamber-site-plan.html",
-                    "title": "Chamber Site Plan"
+                    "title": "Site Plan"
                 }
             ]
         }, {
             "lesson": "04",
             "links": [{
                 "url": "https://codepen.io/Jason-Gibson-the-solid/pen/JjgRRWX",
-                "title": "Pseudo Class Code Pen"
+                "title": "Pseudo Class"
             }]
         }, {
             "lesson": "05",
             "links": [{
                 "url": "https://gibsonjk1.github.io/wdd230/lesson05/bom.html",
-                "title": "BOM Fav Chapter Tool"
+                "title": "BOM Tool"
             }]
         }, {
             "lesson": "06",
             "links": [{
                     "url": "lesson06/images/landscape.webp",
-                    "title": "8kb Landscape Image Webp"
+                    "title": "Webp"
                 },
                 {
                     "url": "lesson06/responsive-images.html",
-                    "title": "Responsive Images"
+                    "title": "Responsive img"
                 }
             ]
         }, {
             "lesson": "07",
             "links": [{
                     "url": "lesson07/lazyload.html",
-                    "title": "Lazy Loading Images"
+                    "title": "Lazy Loading"
                 },
                 {
                     "url": "lesson07/bom.html",
-                    "title": "BOM local storage"
+                    "title": "local storage"
                 }
             ]
         }, {
             "lesson": "08",
             "links": [{
                     "url": "lesson08/tablebuild.html",
-                    "title": "Table Example"
+                    "title": "Table"
                 },
                 {
                     "url": "lesson08/Form-start/index.html",
-                    "title": "Form-Start Assignment"
+                    "title": "Form-Start"
                 },
                 {
                     "url": "form.html",
-                    "title": "Group Form Project"
+                    "title": "Group Form"
                 }
             ]
         }, {
             "lesson": "09",
             "links": [{
                     "url": "lesson09/new-ward-members.json",
-                    "title": "JSON Practice"
+                    "title": "JSON"
                 },
                 {
                     "url": "lesson09/prophets.html",
