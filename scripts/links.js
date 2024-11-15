@@ -28,7 +28,7 @@ const displayLinks = (weeks) => {
                 list.innerHTML += " | "
             }
         });
-        console.log(list)
+        // console.log(list)
         activities.appendChild(list);
     });
 
