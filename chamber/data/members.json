@@ -1,0 +1,59 @@
+{
+    "members": [{
+            "name": "Tech Innovators Inc.",
+            "address": "1234 Innovation Drive, Tech City, TC 56789",
+            "phone_number": "+1-555-123-4567",
+            "website_url": "http://www.techinnovators.com",
+            "image_icon_filename": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2XFrJgH3fg0UoW2_GEgMjMzcRqOYq1JHvg&s",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Green Solutions Ltd.",
+            "address": "5678 Eco Lane, Green Town, GT 12345",
+            "phone_number": "+1-555-234-5678",
+            "website_url": "http://www.greensolutions.com",
+            "image_icon_filename": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UtEtTuKAFYkABCnUakUEtBUljwWtoVcVgA&s",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Health First Corp.",
+            "address": "9101 Wellness Blvd, Health City, HC 67890",
+            "phone_number": "+1-555-345-6789",
+            "website_url": "http://www.healthfirst.com",
+            "image_icon_filename": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7A6ixwoT8yflVylQ-WCEHM1lkJbphMmfEQ&s",
+            "membership_level": "Platinum"
+        },
+        {
+            "name": "EduTech Enterprises",
+            "address": "2345 Learning Ave, Knowledge City, KC 23456",
+            "phone_number": "+1-555-456-7890",
+            "website_url": "http://www.edutech.com",
+            "image_icon_filename": "https://cdn-icons-png.flaticon.com/512/3197/3197967.png",
+            "membership_level": "Gold"
+        },
+        {
+            "name": "Finance Pros LLC",
+            "address": "6789 Money St, Finance Town, FT 34567",
+            "phone_number": "+1-555-567-8901",
+            "website_url": "http://www.financepros.com",
+            "image_icon_filename": "https://cdn.iconscout.com/icon/free/png-256/free-finance-icon-download-in-svg-png-gif-file-formats--money-business-investment-insurance-pack-crime-security-icons-1393906.png?f=webp&w=256",
+            "membership_level": "Silver"
+        },
+        {
+            "name": "Creative Minds Studio",
+            "address": "3456 Art Blvd, Creative City, CC 45678",
+            "phone_number": "+1-555-678-9012",
+            "website_url": "http://www.creativeminds.com",
+            "image_icon_filename": "https://cdn-icons-png.flaticon.com/512/4385/4385926.png",
+            "membership_level": "Platinum"
+        },
+        {
+            "name": "Global Ventures Inc.",
+            "address": "7890 World Rd, Global City, GC 56789",
+            "phone_number": "+1-555-789-0123",
+            "website_url": "http://www.globalventures.com",
+            "image_icon_filename": "https://thumbs.dreamstime.com/b/iceberg-vector-illustration-icon-design-template-pictogram-simple-investment-training-modern-danger-challenge-wave-environment-167046531.jpg",
+            "membership_level": "Gold"
+        }
+    ]
+}
