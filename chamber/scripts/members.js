@@ -1,6 +1,9 @@
 const directory = document.querySelector("#directory")
 const memberData = "data/members.json"
-const switcher = document.querySelector('.slider');
+    // const switcher = document.querySelector('.slider');
+const grid = document.querySelector('#grid-btn')
+const list = document.querySelector('#list-btn')
+const view = document.querySelector('#view')
 
 async function getMembertData() {
     const response = await fetch(memberData);
@@ -50,6 +53,14 @@ const displaymembers = (members) => {
 
 getMembertData();
 
-switcher.addEventListener('click', () => {
+// switcher.addEventListener('click', () => {
+//     directory.classList.toggle('singlefile');
+//     directory.classList.toggle('grid')
+// })
+
+view.addEventListener('click', () => {
     directory.classList.toggle('singlefile');
+    directory.classList.toggle('grid')
+    list.classList.toggle('none')
+    grid.classList.toggle('none')
 })

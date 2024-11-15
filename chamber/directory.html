@@ -44,11 +44,21 @@
         </nav>
     </header>
     <main>
-        <label class="switch">
+        <div id="view">
+            <div id="grid-btn" class="none">
+                <img src="images/grid.png" alt="button to change the view to grid">
+                <p>Grid</p>
+            </div>
+            <div id="list-btn">
+                <img src="images/list.png" alt="button to change the view to grid">
+                <p>List</p>
+            </div>
+        </div>
+        <!-- <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
-                  </label>
-        <section id="directory"></section>
+                  </label> -->
+        <section id="directory" class="grid"></section>
     </main>
     <footer>
         <p>©️ Jason K Gibson 2024</p>
@@ -59,7 +69,6 @@
     <script src="scripts/get-dates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/members.js"></script>
-    <script src="scripts/singlefile.js"></script>
 </body>
 
 </html>
