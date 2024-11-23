@@ -22,13 +22,7 @@ async function getWeather() {
     const icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', icon);
     weatherIcon.setAttribute('alt', data.weather[0].description)
-    weather.innerHTML = `${round(data.main.temp)}&deg;F - ${data.weather[0].description}`
-}
-currentTemp.textContent = await `${data.main.temp}°F`
-let weatherDescription = data.weather[0].description;
-weatherIcon.setAttribute('src', icon);
-weatherIcon.setAttribute('alt', weatherDescription)
-captionDesc.textContent = `${weatherDescription}`
+    weather.textContent = `${Math.round(data.main.temp)}°F - ${data.weather[0].description}`
 }
 
-displayResults();
+getWeather();

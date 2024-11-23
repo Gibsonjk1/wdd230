@@ -21,10 +21,10 @@
                 border-radius: 10px 10px 0 0;
             }
             .left-col {
-                grid-column: 1/7
+                grid-column: 1/9
             }
             .right-col {
-                grid-column: 7/13
+                grid-column: 9/13
             }
             #hamburger {
                 display: none;

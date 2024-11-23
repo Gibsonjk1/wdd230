@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 10px;
+}
+
 nav .nav {
     display: none;
 }
@@ -45,7 +49,7 @@ header {
     flex-direction: column;
     background-color: var(--mainblue);
     color: var(--light);
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -68,7 +72,7 @@ header {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -92,6 +96,7 @@ section h3 {
 .card {
     border: 1px solid black;
     border-radius: 5px;
+    background-color: #eee;
 }
 
 .card ul {
@@ -103,7 +108,8 @@ section h3 {
 }
 
 .right-col {
-    grid-column: 2/12
+    grid-column: 2/12;
+    text-align: center;
 }
 
 #hamburger {
@@ -139,7 +145,7 @@ section h3 {
 }
 
 .map {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -173,4 +179,15 @@ footer {
     background-color: var(--mainblue);
     color: white;
     margin-top: 24px;
+}
+
+#weather-icon {
+    background-color: var(--lighterblue);
+    border-radius: 6px;
+    width: 30px;
+}
+
+.page-visits {
+    text-align: center;
+    font-weight: bold;
 }
