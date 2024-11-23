@@ -8,7 +8,7 @@ const view = document.querySelector('#view')
 async function getMembertData() {
     const response = await fetch(memberData);
     const data = await response.json();
-    console.table(data.members);
+    // console.table(data.members);
     displaymembers(data.members);
 };
 

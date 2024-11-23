@@ -189,6 +189,7 @@ footer {
     color: var(--creamy);
     text-align: center;
     margin-top: 20px;
+    padding: 20px 0;
 }
 
 #hamburger {
@@ -719,8 +720,8 @@ main {
     width: 75% !important;
     max-width: 100px;
     /* border: 1px solid black; */
-    background-image: radial-gradient(var(--lightblue), rgba(0, 48, 73, 0));
-    border-radius: 1px;
+    background-image: radial-gradient(circle at center, var(--lightblue) 40%, rgba(0, 48, 73, 0) 100%);
+    border-radius: 4px;
 }
 
 .weather {
@@ -746,4 +747,34 @@ figcaption {
     padding: 20px;
     justify-content: space-around;
     align-items: center;
+}
+
+.banner {
+    height: 100px;
+    background-image: linear-gradient(to bottom, var(--red), var(--rust));
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.banner hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.banner-close {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.banner-close::after {
+    content: "✖"
 }
