@@ -1,6 +1,6 @@
 const currentTemp = document.querySelector('#weather');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#figcaption');
 const forecast = document.querySelector('#forecast');
 const forecast1 = document.querySelector('#forecast1');
 const forecast2 = document.querySelector('#forecast2');
