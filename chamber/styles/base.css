@@ -797,3 +797,16 @@ figcaption {
     width: 90%;
     max-width: 500px;
 }
+
+.active-nav {
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.active-nav::before {
+    content: "-"
+}
+
+.active-nav::after {
+    content: "-"
+}
