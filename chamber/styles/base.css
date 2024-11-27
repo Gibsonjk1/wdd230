@@ -17,6 +17,8 @@
 html,
 body {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -50,10 +52,6 @@ header {
 .header-img img {
     max-width: 60px;
     border-radius: 2px;
-}
-
-nav .closed {
-    display: none;
 }
 
 nav {
@@ -149,7 +147,7 @@ nav a {
 }
 
 .card-1 {
-    width: 80%;
+    width: 100%;
     min-height: 80px;
     margin: 5px;
 }
@@ -188,7 +186,7 @@ footer {
     background-color: var(--darkblue);
     color: var(--creamy);
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto;
     padding: 20px 0;
 }
 
@@ -212,6 +210,7 @@ footer {
 
 .switch {
     position: absolute;
+    top: -40px;
     right: 2px;
     z-index: 1;
     display: inline-block;
@@ -282,12 +281,18 @@ input:checked+.slider:before {
     right: 10px;
 }
 
-.medium-img {
+.medium-img,
+.large-img,
+.singlefile img,
+nav .closed,
+.none {
     display: none;
 }
 
-.large-img {
-    display: none;
+.hidden-banner {
+    visibility: hidden;
+    transition: visibility .5s, opacity .5s linear;
+    opacity: 0;
 }
 
 
@@ -632,10 +637,6 @@ table {
     align-items: center;
 }
 
-.singlefile img {
-    display: none;
-}
-
 .singlefile div {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
@@ -644,10 +645,6 @@ table {
 
 .singlefile div:nth-child(odd) {
     background-color: rgb(214, 213, 213);
-}
-
-.none {
-    display: none
 }
 
 #view {
@@ -753,9 +750,11 @@ figcaption {
     height: 100px;
     background-image: linear-gradient(to bottom, var(--red), var(--rust));
     width: 85%;
-    margin: 0 auto;
     text-align: center;
-    position: relative;
+    position: fixed;
+    top: 115px;
+    left: 50%;
+    margin-left: -42.5%;
     z-index: 1;
 }
 
@@ -777,4 +776,24 @@ figcaption {
 
 .banner-close::after {
     content: "✖"
+}
+
+.events {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events hr {
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.events div {
+    /* border: 1px solid black; */
+    margin: 2px;
+    width: 90%;
+    max-width: 500px;
 }

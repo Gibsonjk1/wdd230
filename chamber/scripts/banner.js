@@ -21,7 +21,7 @@ async function getBannerData() {
 getBannerData();
 
 button.addEventListener('click', () => {
-    banner.classList.toggle('none')
+    banner.classList.toggle('hidden-banner')
 })
 
 if (!showDates.includes(date.getDay())) {
