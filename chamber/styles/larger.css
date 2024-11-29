@@ -39,9 +39,4 @@
     .membership {
         flex-grow: 1;
     }
-    .switch {
-        top: 5px;
-    }
 }
-
-@media only screen and (min-width: 1100px) {}

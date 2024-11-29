@@ -102,6 +102,7 @@ nav a {
     justify-content: center;
     position: relative;
     background-color: black;
+    text-align: center;
 }
 
 .button picture {
@@ -114,7 +115,7 @@ nav a {
     object-fit: cover;
 }
 
-.button button {
+.button a {
     width: 250px;
     height: 60px;
     border-radius: 10px;
@@ -122,7 +123,9 @@ nav a {
     color: var(--creamy);
     font-size: 30px;
     position: absolute;
-    top: 5px;
+    top: 15px;
+    text-decoration: none;
+    padding-top: 20px;
 }
 
 .cards {
@@ -421,6 +424,7 @@ body {
 
 .discover-main img {
     max-width: 100%;
+    height: auto;
     padding: 10px;
     opacity: 1;
     transition: .5s ease;
@@ -429,18 +433,6 @@ body {
 .container {
     display: block;
     position: relative;
-}
-
-.overlay {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: var(--rust);
-    color: white;
 }
 
 .visit {
@@ -800,7 +792,6 @@ figcaption {
 
 .active-nav {
     font-weight: bold;
-    /* text-decoration: underline; */
 }
 
 .active-nav::before {
