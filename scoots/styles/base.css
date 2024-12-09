@@ -1,0 +1,243 @@
+:root {
+    --orange: #e76f51;
+    --dreamsicle: #f4a261;
+    --yellow: #e9c46a;
+    --lightblue: #2a9d8f;
+    --darkblue: #264653;
+    --sunset: #c10900;
+    --darksunset: #761000;
+}
+
+* {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    height: 120px;
+    background-image: linear-gradient(var(--orange), var(--dreamsicle));
+    position: relative;
+    z-index: 1;
+}
+
+.header-iden {
+    width: 35%;
+    background-image: linear-gradient(to bottom, var(--darkblue), var(--lightblue));
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 50%; */
+    /* margin-left: -17.5%; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+    min-height: 120px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.header-title,
+.header-phrase {
+    display: none;
+}
+
+.header-iden img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+footer {
+    min-height: 80px;
+    margin-top: auto;
+    background-image: linear-gradient(var(--dreamsicle), var(--orange));
+    text-align: center;
+    padding-top: 20px;
+}
+
+.closed {
+    display: none;
+}
+
+#hamburger {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: transparent;
+    border: none;
+}
+
+#hamburger::before {
+    content: "☰";
+    font-size: 25px;
+    float: left;
+    color: black;
+}
+
+#hamburger.open::before {
+    content: "✖";
+    color: black;
+}
+
+nav .open {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: var(--licorice);
+    padding: 40px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.call-to-action {
+    width: 50%;
+    text-align: center;
+    background-image: radial-gradient(circle at bottom center, var(--darksunset), var(--sunset));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25%;
+    margin-top: -40px;
+    padding: 30px 0;
+    border-radius: 10px;
+    border: 4px outset var(--darkblue);
+    box-shadow: 5px 5px;
+}
+
+.call-to-action a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.social img {
+    width: 2em;
+}
+
+.social {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards div {
+    border: 1px solid black;
+    width: 40%;
+    height: auto;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards hr {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cards img {
+    max-width: 80%;
+    height: auto;
+    max-height: 70%;
+}
+
+.cards p {
+    max-width: 80%;
+}
+
+#weather {
+    max-width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to bottom right, var(--lightblue), var(--darkblue));
+    text-align: center;
+    border: 2px double black;
+    border-radius: 10px;
+}
+
+#weather h2 {
+    grid-column: 1/3;
+    font-size: 3em;
+}
+
+#weather hr {
+    grid-column: 1/3;
+}
+
+#weather img {
+    max-width: 30%;
+    /* background-color: blue; */
+}
+
+#weather p {
+    font-size: 2em;
+}
+
+.tempbtn::after {
+    content: "✖"
+}
+
+.tempbtn {
+    width: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.tempbtn:hover {
+    cursor: pointer;
+}
+
+.hightemp {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    margin-left: -25%;
+    z-index: 1;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-size: 1.5em;
+    background-color: var(--darksunset);
+    border-radius: 0 0 5px 5px;
+    /* background-image: radial-gradient(circle at top center, var(--darksunset), var(--sunset)) */
+}
+
+.hightemp p {
+    padding: 0 15px 5px 15px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}

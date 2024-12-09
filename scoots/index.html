@@ -8,15 +8,15 @@
     <title>Scoots - Scooter Rentals | Home Page</title>
     <link rel="icon" href="favicon.ico">
     <meta name="author" content="Jason K Gibson">
-    <meta name="description" content="The home page of the Chamber of Commerce for Shelley Idaho. including Events, Calendar, and directory of members">
+    <meta name="description" content="Your home for the best rentals in Cozumel. Scooters | Jeeps | Side-by-Sides">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Jason K Gibson - WDD 230 - Chamber of Commerce">
+    <meta property="og:title" content="Jason K Gibson - WDD 230 - Scoots Concept">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fchamber-of-commerce&psig=AOvVaw167CoqI2er2uHEsl1U0eso&ust=1728602339165000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCSs9i3gokDFQAAAAAdAAAAABAE">
-    <meta property="og:url" content="https://gibsonjk1.github.io/wdd230/chamber">
-    <meta property="og:description" content="Welcome to the Chamber of Commerce for Shelley Idaho">
+    <meta property="og:image" content="https://gibsonjk1.github.io/wdd230/scoots/images/motor_scooter.png">
+    <meta property="og:url" content="https://gibsonjk1.github.io/wdd230/scoots">
+    <meta property="og:description" content="Welcome to your home for the best rentals in Cozumel">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -26,30 +26,83 @@
 <body>
     <header>
         <div class="header-iden">
-            <div class="header-img">
-                <img src="images/world.webp" alt="Shelley Chamber of Commerce">
-            </div>
             <div class="header-title">
-                <h1>Shelley Idaho Chamber of Commerce</h1>
+                <h1>Scoots Rentals</h1>
+            </div>
+            <img src="images/logo.png" alt="Scoots Rentals Logo">
+            <div class="header-phrase">
+                <p>Cozumels Best Rentals</p>
+                <p>"Scoot into Adventure!"</p>
             </div>
         </div>
         <button id="hamburger"></button>
         <nav>
             <ul id="nav" class="closed">
-                <li><a href="index.html" class="active-nav">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="l1"><a href="index.html" class="active-nav">Home</a></li>
+                <li class="l2"><a href="rentals.html">Rentals</a></li>
+                <li class="r1"><a href="reservations.html">Reservations</a></li>
+                <li class="r2"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <div class="hightemp">
+            <button class="tempbtn"></button>
+            <p>The high temperature today is a perfect</p>
+        </div>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 400px)" srcset="images/hero.jpg">
+                <img src="images/hero.jpg" alt="temple picture" width="960" height="633">
+            </picture>
+            <div class="call-to-action">
+                <a href="./reservations.html">Reserve Now!</a>
+            </div>
+        </div>
+        <div class="cards">
+            <div>
+                <h2>Scooters</h2>
+                <br>
+                <hr>
+                <br>
+                <img src="images/scooter.webp" alt="Scooters">
+                <p>3 different selections of Honda Motor Scooters</p>
+            </div>
+            <div>
+                <h2>ATVs</h2>
+                <br>
+                <hr>
+                <br>
+                <img src="images/atvs.webp" alt="Atvs">
+                <p>4 person Honda Pioneer Side-by-Side ATVs</p>
+            </div>
+            <div>
+                <h2>Jeeps</h2>
+                <br>
+                <hr>
+                <br>
+                <img src="images/jeep.webp" alt="Jeeps">
+                <p>2 or 4 door manual transmission Jeeps</p>
+            </div>
+        </div>
+        <div id="weather">
+            <!-- to be filled with js -->
+        </div>
     </main>
     <footer>
+        <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</p>
+        <p>Phone: 123-456-7890</p>
+        <p>© Jason K Gibson | 2024</p>
+        <a href="references.html">references</a>
+        <div class="social">
+            <a href="http://www.x.com"><img src="images/xlogo.svg" alt="x.com"></a>
+            <a href="http://www.facebook.com"><img src="images/facebooklogo.svg" alt="facebook.com"></a>
+            <a href="http://www.instagram.com"><img src="images/instagramlogo.svg" alt="instagram.com"></a>
+        </div>
 
     </footer>
-
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
