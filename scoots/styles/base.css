@@ -41,6 +41,19 @@ header {
     display: none;
 }
 
+.header-title {
+    font-family: "Island Moments", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    margin-top: -50px;
+    width: 400px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -202px;
+}
+
 .header-iden img {
     width: 80%;
     height: auto;
@@ -129,12 +142,16 @@ nav {
 
 #nav li {
     list-style-type: none;
-    display: block;
+    display: none;
 }
 
 #nav.open {
     width: 250px;
     background-color: rgba(34, 34, 34, 1);
+}
+
+#nav.open li {
+    display: block
 }
 
 #hamburger.open {
@@ -233,7 +250,7 @@ nav {
 }
 
 #weather {
-    max-width: 80%;
+    max-width: 50%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -241,11 +258,12 @@ nav {
     text-align: center;
     border: 2px double black;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 #weather h2 {
     grid-column: 1/3;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 #weather hr {
@@ -253,12 +271,13 @@ nav {
 }
 
 #weather img {
-    max-width: 30%;
+    max-width: 20%;
     /* background-color: blue; */
 }
 
 #weather p {
-    font-size: 2em;
+    font-size: 1em;
+    margin: 0;
 }
 
 .tempbtn::after {
@@ -286,9 +305,9 @@ nav {
     margin-left: -25%;
     z-index: 1;
     text-align: center;
-    padding: 30px 0 10px 0;
-    font-size: 1.5em;
-    background-color: var(--darksunset);
+    padding: 10px 0 5px 0;
+    font-size: 1em;
+    background-color: rgba(118, 16, 0, .8);
     border-radius: 0 0 5px 5px;
     /* background-image: radial-gradient(circle at top center, var(--darksunset), var(--sunset)) */
 }
@@ -339,6 +358,12 @@ nav {
     border: 1px solid black;
     border-radius: 1px;
     margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.form1 input,
+.form1 textarea {
+    width: 90%;
 }
 
 .form1 label {
@@ -462,7 +487,9 @@ h1 {
 }
 
 .maps {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #greyed {

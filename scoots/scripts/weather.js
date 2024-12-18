@@ -2,6 +2,7 @@ const weatherDiv = document.querySelector("#weather");
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=20.508046802875196&lon=-86.94553121679152&appid=6abb07fe3579e18bd052380bbf880933&units=imperial`
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=20.508046802875196&lon=-86.94553121679152&appid=6abb07fe3579e18bd052380bbf880933&units=imperial`
 const highTemp = document.querySelector(".hightemp")
+const tempSpan = document.querySelector(".tempspan")
 const tempbtn = document.querySelector(".tempbtn")
 
 
@@ -55,7 +56,6 @@ async function displayWeather() {
     const hr = document.createElement('hr');
     const todayP = document.createElement('p');
     const tomorrowP = document.createElement('p');
-    const highTempP = document.createElement('p');
     const humidity1 = document.createElement('p');
     const humidity2 = document.createElement('p');
 
@@ -72,7 +72,7 @@ async function displayWeather() {
     main2.textContent = forecastData.list[3].weather[0].main;
     todayP.textContent = "Today's Weather:"
     tomorrowP.textContent = "Tomorrow's Weather:"
-    highTempP.textContent = `${weatherData.main.temp_max} °F`;
+    tempSpan.textContent = `${weatherData.main.temp_max} °F`;
     humidity1.textContent = `Humidity: ${weatherData.main.humidity}%`
     humidity2.textContent = `Humidity: ${forecastData.list[3].main.humidity}%`
 
@@ -100,7 +100,7 @@ async function displayWeather() {
     weatherDiv.appendChild(tomorrowWeather)
 
     //set the hightemp closable modal
-    highTemp.appendChild(highTempP)
+    // highTemp.appendChild(highTempP)
 
 }
 
