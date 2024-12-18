@@ -99,8 +99,6 @@ async function displayWeather() {
     weatherDiv.appendChild(currWeather)
     weatherDiv.appendChild(tomorrowWeather)
 
-    //set the hightemp closable modal
-    // highTemp.appendChild(highTempP)
 
 }
 
