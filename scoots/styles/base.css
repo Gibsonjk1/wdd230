@@ -8,12 +8,8 @@
     --darksunset: #761000;
 }
 
-* {
-    width: 100%;
-    margin: 0;
-}
-
 body {
+    width: 100%;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -77,11 +73,12 @@ footer {
 }
 
 #hamburger {
-    position: absolute;
+    position: fixed;
     top: 7px;
     left: 7px;
     background-color: transparent;
     border: none;
+    z-index: 2;
 }
 
 #hamburger::before {
@@ -89,23 +86,69 @@ footer {
     font-size: 25px;
     float: left;
     color: black;
+    cursor: pointer;
 }
 
 #hamburger.open::before {
     content: "✖";
-    color: black;
+    color: #818181;
+    cursor: pointer;
 }
 
-nav .open {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: var(--licorice);
-    padding: 40px;
-    width: 50%;
-    margin: 0 auto;
+nav {
+    width: 0;
+}
+
+#nav {
+    height: 100%;
+    position: fixed;
+    top: -20px;
+    left: 0;
+    z-index: 1;
+    /* display: flex; */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width .5s, background-color .5s, color .1s;
+    /* padding-right: 30px; */
+    width: 0;
+}
+
+#nav a {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: .3;
+    /* background-color: blue; */
+}
+
+#nav a:hover {
+    color: #f1f1f1;
+}
+
+#nav li {
+    list-style-type: none;
+    display: block;
+}
+
+#nav.open {
+    width: 250px;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+#hamburger.open {
+    left: 220px;
+}
+
+#nav.notopen {
+    width: 0;
+    background-color: rgba(34, 34, 34, 0);
+    color: rgba(34, 34, 34, 0);
+}
+
+#hamburger.notopen {
+    left: 7px;
 }
 
 .call-to-action {
@@ -144,6 +187,7 @@ nav .open {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .cards div {
@@ -173,6 +217,19 @@ nav .open {
 
 .cards p {
     max-width: 80%;
+}
+
+.card a {
+    width: 60%;
+    background-color: var(--sunset);
+    color: white;
+    padding: 4px 0;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.cards h2 {
+    width: 100%;
 }
 
 #weather {
@@ -240,4 +297,179 @@ nav .open {
     padding: 0 15px 5px 15px;
     box-sizing: border-box;
     color: whitesmoke;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+}
+
+#open-agreement {
+    width: 70%;
+    background-color: rgb(218, 209, 209);
+    position: absolute;
+    left: 50%;
+    margin: 120px 0 0 -35%;
+}
+
+#open-agreement::after {
+    content: "🔻"
+}
+
+#agreement {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* form styles */
+
+.formWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form1 {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-bottom: 20px;
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #151053;
+    font-size: .9rem;
+}
+
+.formWrapper h1 {
+    padding-top: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.form1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(to bottom, var(--lightblue), var(--darkblue));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 85%;
+    max-width: 200px;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 4px #999;
+    display: block;
+}
+
+.form1 input:required {
+    border-bottom: 2.5px solid #6f200e;
+    background-color: #eee;
+}
+
+.form1 input:required:valid {
+    border: 1px solid #999;
+    background-color: #eee;
+}
+
+.form1 p {
+    text-align: center;
+}
+
+.thanks {
+    border: 1px double var(--lightblue);
+    width: 75%;
+    margin: 150px auto;
+    vertical-align: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.rental-info {
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto 30px auto;
+    width: 80%;
+}
+
+.rental-info thead tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+
+.rental-info thead tr:nth-child(odd) th {
+    border: 1px solid black;
+}
+
+.rental-info tbody td,
+.rental-info tbody th {
+    border: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+.rental-info td {
+    /* width: 2em; */
+    text-align: center;
+}
+
+.rental-info th {
+    min-width: 6em;
+}
+
+.rental-info tbody tr:nth-child(odd) {
+    background-color: rgb(241, 241, 241);
+}
+
+.rental-info caption {
+    display: table-caption;
+    caption-side: bottom;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.contact form {
+    margin: 0 auto;
+}
+
+.maps {
+    margin: 0 auto;
+}
+
+#greyed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(136, 136, 136, .8);
 }

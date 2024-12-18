@@ -25,37 +25,95 @@
 
 <body>
     <header>
-        <div class="header-iden">
-            <div class="header-title">
-                <h1>Scoots Rentals</h1>
+        <div id="greyed" class="closed"></div>
+        <header>
+            <div class="header-iden">
+                <div class="header-title">
+                    <h1>Scoots Rentals</h1>
+                </div>
+                <img src="images/logo.png" alt="Scoots Rentals Logo">
+                <div class="header-phrase">
+                    <p>Cozumels Best Rentals</p>
+                    <p>"Scoot into Adventure!"</p>
+                </div>
             </div>
-            <img src="images/logo.png" alt="Scoots Rentals Logo">
-            <div class="header-phrase">
-                <p>Cozumels Best Rentals</p>
-                <p>"Scoot into Adventure!"</p>
+            <button id="hamburger"></button>
+            <nav>
+                <ul id="nav">
+                    <li class="l1"><a href="index.html">Home</a></li>
+                    <li class="l2"><a href="rentals.html">Rentals</a></li>
+                    <li class="r1"><a href="reservations.html">Reservations</a></li>
+                    <li class="r2"><a href="contact.html" class="active-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <button id="open-agreement">Please Read the Rental Agreement (click to open)</button>
             </div>
-        </div>
-        <button id="hamburger"></button>
-        <nav>
-            <ul id="nav" class="closed">
-                <li class="l1"><a href="index.html">Home</a></li>
-                <li class="l2"><a href="rentals.html">Rentals</a></li>
-                <li class="r1"><a href="reservations.html" class="active-nav">Reservations</a></li>
-                <li class="r2"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+            <div id="agreement" class="closed">
+                <ol>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ol>
+                <br>
+                <hr>
+            </div>
+            <div class="formWrapper">
+                <h1>Submit a Reservation Request!</h1>
+                <form action="thanks.html" method="GET" class="form1">
+                    <label>Full Name* <input type="text" id="fullName" name="fullName" required></label>
+                    <label>Desired Rental Date*<input type="date" id="date" name="date" required></label>
+                    <label>Rental Period* (1-5 days) <input type="number" id="period" name="period" required min="1" max="5"></label>
+                    <label>Rental Type* <select name="vehicle" id="vehicle" required>
+                    <option value="">Select One:</option>
+                    <optgroup label="--Scooters--">
+                            <option value="Metropolitan">Honda Metropolitan - 1 Person</option>
+                            <option value="Dio">Honda Dio - 2 Person</option>
+                            <option value="PCX150">Honda PCX150 - 2 Person</option>
+                    </optgroup>
+                    <optgroup label="--ATVs--">
+                            <option value="Pioneer">Honda Pinoeer 1000 - 4 Person</option>
+                    </optgroup>
+                    <optgroup label="--Jeeps--">
+                            <option value="Wrangler5">Jeep Wrangler 4-Door - 5 Person</option>
+                            <option value="Wrangler4">Jeep Wrangler 2-Door - 2 Person</option>
+                    </optgroup>
+                  </select></label>
+                    <label>Number of Units* (max 5) <input type="number" id="rentalnum" name="rentalnum" required min="1" max="5"></label>
+                    <label>Phone Number* <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="xxx-xxx-xxxx"></label>
+                    <label>Email Address* <input type="email" id="email" name="email" required placeholder="someone@something.com"></label>
+                    <label>Home State/Country <input type="text" id="homeState" name="homeState"></label>
+                    <label>Cruise Line <input type="text" id="CruiseLine" name="CruiseLine"></label>
+                    <label>Special Accomodations/Comments <textarea name="Comments" id="Comments" cols="30" rows="10"></textarea></label>
+                    <input type="submit" id="formButton" value="Create Account">
+                    <p>* indicates a required field</p>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</p>
+            <p>Phone: 123-456-7890</p>
+            <p>© Jason K Gibson | 2024</p>
+            <a href="references.html">references</a>
+            <div class="social">
+                <a href="http://www.x.com"><img src="images/xlogo.svg" alt="x.com"></a>
+                <a href="http://www.facebook.com"><img src="images/facebooklogo.svg" alt="facebook.com"></a>
+                <a href="http://www.instagram.com"><img src="images/instagramlogo.svg" alt="instagram.com"></a>
+            </div>
 
-    </main>
-    <footer>
-        <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</p>
-        <p>Phone: 123-456-7890</p>
-        <p>© Jason K Gibson | 2024</p>
-        <a href="references.html">references</a>
-
-    </footer>
-    <script src="scripts/hamburger.js"></script>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/agreement.js"></script>
+        <script src="scripts/phoneValidation.js"></script>
 </body>
 
-</html>
+</html>s

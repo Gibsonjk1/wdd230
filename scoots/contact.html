@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div id="greyed" class="closed"></div>
     <header>
         <div class="header-iden">
             <div class="header-title">
@@ -37,7 +38,7 @@
         </div>
         <button id="hamburger"></button>
         <nav>
-            <ul id="nav" class="closed">
+            <ul id="nav">
                 <li class="l1"><a href="index.html">Home</a></li>
                 <li class="l2"><a href="rentals.html">Rentals</a></li>
                 <li class="r1"><a href="reservations.html">Reservations</a></li>
@@ -46,14 +47,49 @@
         </nav>
     </header>
     <main>
+        <div class="spacer"></div>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31270.146388166704!2d-86.98514091561692!3d20.489863261360455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1734056799389!5m2!1sen!2sus"
+                width="600" height="450" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <h2>Phone</h2>
+            <hr>
+            <p>123-456-7890</p>
+            <h2>Address</h2>
+            <hr>
+            <p>We have two locations:</p>
+            <ul>
+                <li>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</li>
+                <p>(Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel)</p>
+                <li>Royal Village Shopping Center, Av. Rafael E. Melgar Local 53, 77675 Cozumel, Q.R., Mexico</li>
+                <p>(near the Terminal Puerta Maya)</p>
+            </ul>
 
 
+
+
+
+            <h2>Send us a message</h2>
+            <form action="thanks.html" class="form1">
+                <label>Name: <input type="text" required id="contact-name" name="contact-name"></label>
+                <label>Email: <input type="email" required id="contact-email" name="contact-email"></label>
+                <label>Message: <textarea name="contact-message" id="contact-message" cols="30" rows="5"></textarea></label>
+            </form>
+            <p></p>
+        </div>
     </main>
     <footer>
         <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</p>
         <p>Phone: 123-456-7890</p>
         <p>© Jason K Gibson | 2024</p>
         <a href="references.html">references</a>
+        <div class="social">
+            <a href="http://www.x.com"><img src="images/xlogo.svg" alt="x.com"></a>
+            <a href="http://www.facebook.com"><img src="images/facebooklogo.svg" alt="facebook.com"></a>
+            <a href="http://www.instagram.com"><img src="images/instagramlogo.svg" alt="instagram.com"></a>
+        </div>
 
     </footer>
     <script src="scripts/hamburger.js"></script>

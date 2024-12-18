@@ -37,8 +37,8 @@ async function getForecast() {
 async function displayWeather() {
     const weatherData = await getWeather();
     const forecastData = await getForecast();
-    console.log(weatherData);
-    console.log(forecastData);
+    // console.log(weatherData);
+    // console.log(forecastData);
     const iconToday = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
     const iconTomorrow = `https://openweathermap.org/img/wn/${forecastData.list[3].weather[0].icon}@2x.png`;
 

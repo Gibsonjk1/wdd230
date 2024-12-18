@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div id="greyed" class="closed"></div>
     <header>
         <div class="header-iden">
             <div class="header-title">
@@ -37,22 +38,31 @@
         </div>
         <button id="hamburger"></button>
         <nav>
-            <ul id="nav" class="closed">
+            <ul id="nav">
                 <li class="l1"><a href="index.html">Home</a></li>
                 <li class="l2"><a href="rentals.html">Rentals</a></li>
                 <li class="r1"><a href="reservations.html">Reservations</a></li>
-                <li class="r2"><a href="contact.html">Contact Us</a></li>
+                <li class="r2"><a href="contact.html" class="active-nav">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <div class="thanks">
+            <h1>Thank You!</h1>
+            <h2>Your reservation request has been received!</h2>
+            <p>We'll be in touch soon!</p>
+        </div>
     </main>
     <footer>
         <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77668 Cozumel, Q.R., Mexico</p>
         <p>Phone: 123-456-7890</p>
         <p>© Jason K Gibson | 2024</p>
         <a href="references.html">references</a>
+        <div class="social">
+            <a href="http://www.x.com"><img src="images/xlogo.svg" alt="x.com"></a>
+            <a href="http://www.facebook.com"><img src="images/facebooklogo.svg" alt="facebook.com"></a>
+            <a href="http://www.instagram.com"><img src="images/instagramlogo.svg" alt="instagram.com"></a>
+        </div>
 
     </footer>
     <script src="scripts/hamburger.js"></script>

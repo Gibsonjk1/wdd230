@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div id="greyed" class="closed"></div>
     <header>
         <div class="header-iden">
             <div class="header-title">
@@ -35,17 +36,70 @@
                 <p>"Scoot into Adventure!"</p>
             </div>
         </div>
-        <button id="hamburger"></button>
+        <button id="hamburger" class="notopen"></button>
         <nav>
-            <ul id="nav" class="closed">
+            <ul id="nav" class="notopen">
                 <li class="l1"><a href="index.html">Home</a></li>
-                <li class="l2"><a href="rentals.html" class="active-nav">Rentals</a></li>
+                <li class="l2"><a href="rentals.html">Rentals</a></li>
                 <li class="r1"><a href="reservations.html">Reservations</a></li>
-                <li class="r2"><a href="contact.html">Contact Us</a></li>
+                <li class="r2"><a href="contact.html" class="active-nav">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="spacer"></div>
+        <h1>Rentals</h1>
+        <section class="cards">
+            <h2>Scooters</h2>
+            <hr>
+            <div class="card">
+                <h3>Honda Metropolitan</h3>
+                <img src="images/Metropolitan.png" alt="Honda Metropolitan Scooter">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+            <div class="card">
+                <h3>Honda Dio</h3>
+                <img src="images/dio.png" alt="Honda Dio Scooter">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+            <div class="card">
+                <h3>Honda PCX150</h3>
+                <img src="images/pcx.png" alt="Honda PCX150 Scooter">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+        </section>
+        <section class="cards">
+            <h2>ATVs</h2>
+            <hr>
+            <div class="card">
+                <h3>Honda Pioneer</h3>
+                <img src="images/pinoeer.png" alt="Honda Pioneer 1000">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+        </section>
+        <section class="cards">
+            <h2>Jeeps</h2>
+            <hr>
+            <div class="card">
+                <h3>Jeep Wrangler 2-Door</h3>
+                <img src="images/wrangler-two.jpg" alt="2-Door Jeep Wrangler">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+            <div class="card">
+                <h3>Jeep Wrangler 4-Door</h3>
+                <img src="images/wrangler-four.webp" alt="4-Door Jeep Wrangler">
+
+                <a href="reservations.html">Reserve Now</a>
+            </div>
+        </section>
+        <div class="rental-info">
+            <!-- to be filled by rentals.js -->
+        </div>
 
     </main>
     <footer>
@@ -53,9 +107,15 @@
         <p>Phone: 123-456-7890</p>
         <p>© Jason K Gibson | 2024</p>
         <a href="references.html">references</a>
+        <div class="social">
+            <a href="http://www.x.com"><img src="images/xlogo.svg" alt="x.com"></a>
+            <a href="http://www.facebook.com"><img src="images/facebooklogo.svg" alt="facebook.com"></a>
+            <a href="http://www.instagram.com"><img src="images/instagramlogo.svg" alt="instagram.com"></a>
+        </div>
 
     </footer>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/rentals.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,105 @@
+{
+    "Rentals": [{
+            "vehicleName": "Honda Metro",
+            "vehicleType": "Scooter",
+            "maxPersons": 1,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 20,
+                    "fullDay": 30
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 25,
+                    "fullDay": 35
+                }
+            ]
+
+        },
+        {
+            "vehicleName": "Honda Dio",
+            "vehicleType": "Scooter",
+            "maxPersons": 2,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 30,
+                    "fullDay": 40
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 35,
+                    "fullDay": 45
+                }
+            ]
+
+        },
+        {
+            "vehicleName": "Honda PCX150",
+            "vehicleType": "Scooter",
+            "maxPersons": 2,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 40,
+                    "fullDay": 50
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 45,
+                    "fullDay": 55
+                }
+            ]
+
+        },
+        {
+            "vehicleName": "Honda Pioneer",
+            "vehicleType": "ATV",
+            "maxPersons": 4,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 50,
+                    "fullDay": 70
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 60,
+                    "fullDay": 80
+                }
+            ]
+
+        },
+        {
+            "vehicleName": "Jeep Wrangler 4 Door",
+            "vehicleType": "SUV",
+            "maxPersons": 5,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 70,
+                    "fullDay": 100
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 85,
+                    "fullDay": 125
+                }
+            ]
+
+        },
+        {
+            "vehicleName": "Jeep Wrangler 2 Door",
+            "vehicleType": "SUV",
+            "maxPersons": 4,
+            "prices": [{
+                    "priceType": "Reservation",
+                    "halfDay": 60,
+                    "fullDay": 85
+                },
+                {
+                    "priceType": "WalkIn",
+                    "halfDay": 70,
+                    "fullDay": 90
+                }
+            ]
+
+        }
+    ]
+}

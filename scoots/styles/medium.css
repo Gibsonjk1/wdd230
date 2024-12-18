@@ -1,9 +1,7 @@
 @media only screen and (min-width: 800px) {
-    /* nav {
-        background-color: blueviolet;
-        z-index: 1;
-    } */
-    #nav {
+    #nav.open,
+    #nav.notopen {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: 5px;
@@ -11,31 +9,28 @@
         bottom: 5px;
         /* background-color: deeppink; */
         box-sizing: border-box;
+        padding: 0;
+        background-color: transparent;
     }
     #nav li {
         list-style-type: none;
-        /* text-align: center; */
-        /* padding: 20px 0; */
+        text-align: center;
+        padding: 20px 0;
         font-size: 1.2em;
         padding: 10px;
+        margin-left: -50%;
     }
     #nav a {
+        display: inline-block;
         text-decoration: none;
         color: black;
         position: absolute;
         bottom: 0px;
         transition: font-size .2s linear;
     }
-    #nav a:hover {
-        font-size: 120%;
-        font-weight: bold;
-    }
     .active-nav {
         font-size: 120%;
         font-weight: bold;
-    }
-    .active-nav::before {
-        content: "📍"
     }
     .l1 {
         grid-column: 1/2;
